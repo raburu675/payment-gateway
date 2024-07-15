@@ -8,6 +8,9 @@ const { Timestamp } = require('mongodb');
 // Create express app
 const app = express();
 
+// Load environment variables from .env file
+dotenv.config();
+
 // Middleware
 app.use(express.json());
 app.use(cors());
